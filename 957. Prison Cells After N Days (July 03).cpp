@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/prison-cells-after-n-days/
-//juwoo는 사기꾼
-//ㅜㅜㅜㅜ안돌아가ㅠㅠㅠㅠㅠ
+//https://leetcode.com/problems/prison-cells-after-n-days/
+//Time complexity : O(n^2)
+//Space complexity : O(1)
 class Solution {
 public:
     vector<int> prisonAfterNDays(vector<int>& cells, int N) {

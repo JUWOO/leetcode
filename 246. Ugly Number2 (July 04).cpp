@@ -13,33 +13,19 @@ public:
         i++;
         while(i!=n)
         {
-            if(ary[L1]*2<=ary[L2]*3 && ary[L1]*2<=ary[L3]*5){
+            if(ary[L1]*2<=ary[L2]*3 && ary[L1]*2<=ary[L3]*5)
                 ary[i] = ary[L1]*2;
-                if(ary[i]==ary[L1]*2)
-                    L1++;
-                if(ary[i]==ary[L2]*3)
-                    L2++;
-                if(ary[i]==ary[L3]*5)
-                    L3++;
-            }
-            else if(ary[L2]*3<=ary[L1]*2 && ary[L2]*3<=ary[L3]*5){
+            else if(ary[L2]*3<=ary[L1]*2 && ary[L2]*3<=ary[L3]*5)
                 ary[i] = ary[L2]*3;
-                if(ary[i]==ary[L1]*2)
-                    L1++;
-                if(ary[i]==ary[L2]*3)
-                    L2++;
-                if(ary[i]==ary[L3]*5)
-                    L3++;
-            }
-            else if(ary[L3]*5<=ary[L1]*2 && ary[L3]*5<=ary[L2]*3){
+
+            else if(ary[L3]*5<=ary[L1]*2 && ary[L3]*5<=ary[L2]*3)
                 ary[i] = ary[L3]*5;
-                if(ary[i]==ary[L1]*2)
-                    L1++;
-                if(ary[i]==ary[L2]*3)
-                    L2++;
-                if(ary[i]==ary[L3]*5)
-                    L3++;
-            }
+            if(ary[i]==ary[L1]*2)
+                L1++;
+            if(ary[i]==ary[L2]*3)
+                L2++;
+            if(ary[i]==ary[L3]*5)
+                L3++;
             i++;
         }
         return ary[n-1];
