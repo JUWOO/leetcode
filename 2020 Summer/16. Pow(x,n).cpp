@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/powx-n/
+//Time Complexity : O(1)
 class Solution {
 public:
     double myPow(double x, int n) {
